@@ -1,0 +1,198 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+/* Top Banner */
+.top-banner {
+    background-color: #ffe048;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+/* Header Navigation */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: left;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.get-started-btn {
+    background-color: #6a4dfb;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* Select all divs that are direct children of the parent container */
+body>div {
+    background-color: #f0f0f0;
+    /* background color for the block */
+    border-radius: 10px;
+    width: 300px;
+    /* large size */
+    padding: 30px;
+    margin: 20px auto;
+    text-align: center;
+
+    /* Add shadow for visual */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Scale up on hover for the div */
+body>div:hover {
+    transform: scale(1.05);
+}
+
+/* Style images inside the container */
+body>div>img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* Style the <h3> directly inside the div */
+body>div>h3 {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Style the <p> directly inside the div */
+body>div>p {
+    font-size: 1em;
+    color: #333;
+}
+
+
+
+.testimonials {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    gap: 20px;
+    background-color: #fff;
+}
+
+.testimonial {
+    min-width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+
+.location-downward {
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+}
+
+.location-downward h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.location-downward p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 250px;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.lost-things {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.lost-things h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hover-grow {
+    transition: transform 0.3s ease;
+    display: block;
+    width: 150px;
+    padding: 10px;
+}
+
+.hover-grow:hover {
+    transform: scale(1.05);
+}
+
+
+.plans {
+    padding: 40px 20px
+}
