@@ -1,0 +1,630 @@
+html,
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Twemoji Country Flags", Roboto, sans-serif;
+    line-height: 1.6;
+    max-width: 100%;
+}
+
+button:hover {
+    background-color: #5a34a6;
+}
+
+
+/* Header */
+header {
+    background: #f5c842;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+section img {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+section {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+section h2 {
+    font-size: 48px;
+}
+
+section p {
+    font-size: 18px;
+}
+
+section div {
+    padding: 20px;
+}
+
+
+/* Navigation */
+nav {
+    background: white;
+    padding: 16px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav > div {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav > div > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #6b46c1;
+}
+
+nav > div > div:first-child::before {
+    content: "🔵";
+    font-size: 20px;
+}
+
+nav > div > div:nth-child(2) {
+    display: flex;
+    gap: 32px;
+}
+
+nav > div > div:nth-child(2) > span {
+    color: #374151;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+nav > div > div:last-child {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+nav > div > div:last-child > button {
+    background: #6b46c1;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* Hero Section */
+section:first-of-type {
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+section:first-of-type > div {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 10;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+
+section:first-of-type h1 {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #111827;
+    margin-bottom: 24px;
+}
+
+section:first-of-type p {
+    font-size: 18px;
+    color: #6b7280;
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+
+section:first-of-type > div > div:first-child > div {
+    display: flex;
+    gap: 16px;
+}
+
+section:first-of-type button:first-of-type {
+    background: #6b46c1;
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+section:first-of-type button:last-of-type {
+    background: transparent;
+    color: #6b46c1;
+    border: 2px solid #6b46c1;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+section:first-of-type > div > div:last-child {
+    position: relative;
+    height: 500px;
+}
+
+section:first-of-type img:first-of-type {
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+section:first-of-type img:last-of-type {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 280px;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+/* Testimonials Section */
+section:nth-of-type(2) {
+    padding: 80px 0;
+    background: white;
+}
+
+section:nth-of-type(2) > div {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 0 20px;
+}
+
+section:nth-of-type(2) > div > div:first-child {
+    background: #7dd3fc;
+    padding: 32px;
+    border-radius: 16px;
+    color: #0f172a;
+}
+
+section:nth-of-type(2) > div > div:nth-child(2) {
+    background: #86efac;
+    padding: 32px;
+    border-radius: 16px;
+    color: #0f172a;
+}
+
+section:nth-of-type(2) > div > div:last-child {
+    background: #f472b6;
+    padding: 32px;
+    border-radius: 16px;
+    color: #0f172a;
+}
+
+section:nth-of-type(2) h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
+section:nth-of-type(2) p {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+section:nth-of-type(2) span {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+
+/* Location Section */
+section:nth-of-type(3) {
+    padding: 80px 0;
+    background: #f9fafb;
+}
+
+section:nth-of-type(3) > h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 16px;
+}
+
+section:nth-of-type(3) > p {
+    text-align: center;
+    font-size: 18px;
+    color: #6b7280;
+    margin-bottom: 60px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section:nth-of-type(3) > div {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+section:nth-of-type(3) > div > div {
+    text-align: center;
+}
+
+section:nth-of-type(3) h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+section:nth-of-type(3) > div p {
+    font-size: 16px;
+    color: #6b7280;
+}
+
+
+/* Never Lose Section */
+section:nth-of-type(4) {
+    padding: 80px 0;
+    background: white;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;;
+}
+
+section:nth-of-type(4) > h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+section:nth-of-type(4) > p {
+    text-align: center;
+    font-size: 18px;
+    color: #6b7280;
+    margin-bottom: 60px;
+}
+
+section:nth-of-type(4) > div {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 0 20px;
+}
+
+section:nth-of-type(4) > div > div {
+    background: #f9fafb;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+}
+
+section:nth-of-type(4) > div > div:first-child {
+    grid-row: span 2;
+}
+
+section:nth-of-type(4) h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+section:nth-of-type(4) > div p {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+
+/* Pricing Section */
+section:nth-of-type(5) {
+    padding: 80px 0;
+    background: #f9fafb;
+}
+
+section:nth-of-type(5) > h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 16px;
+}
+
+section:nth-of-type(5) > p {
+    text-align: center;
+    font-size: 18px;
+    color: #6b7280;
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section:nth-of-type(5) > div {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 0 20px;
+}
+
+section:nth-of-type(5) > div > div:first-child {
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+section:nth-of-type(5) > div > div:nth-child(2) {
+    background: #f3f4f6;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+section:nth-of-type(5) > div > div:last-child {
+    background: #fef3c7;
+    border-radius: 16px;
+    padding: 32px;
+    position: relative;
+}
+
+section:nth-of-type(5) > div > div:last-child::before {
+    content: "Perfect for families";
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: #f59e0b;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+section:nth-of-type(5) h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 24px;
+}
+
+section:nth-of-type(5) ul {
+    list-style: none;
+    margin-bottom: 32px;
+}
+
+section:nth-of-type(5) li {
+    padding: 8px 0;
+    color: #374151;
+    position: relative;
+    padding-left: 24px;
+}
+
+section:nth-of-type(5) li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: bold;
+}
+
+section:nth-of-type(5) button {
+    width: 100%;
+    background: #6b46c1;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* Final Section */
+section:nth-of-type(6) {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+}
+
+section:nth-of-type(6) > div {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    padding: 0 20px;
+}
+
+section:nth-of-type(6) h2 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 24px;
+}
+
+section:nth-of-type(6) > div > div:first-child > div {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+section:nth-of-type(6) > div > div:first-child > div > div {
+    display: flex;
+    gap: 8px;
+}
+
+section:nth-of-type(6) > div > div:first-child > div > div > span {
+    color: #f59e0b;
+    font-size: 24px;
+}
+
+section:nth-of-type(6) > div > div:last-child {
+    text-align: center;
+}
+
+section:nth-of-type(6) img {
+    width: 300px;
+    height: 600px;
+    object-fit: cover;
+}
+
+
+/* Footer */
+footer {
+    background: #1f2937;
+    color: white;
+    padding: 60px 0 20px;
+}
+
+footer > div {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+footer h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin-bottom: 8px;
+}
+
+footer a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer .home-footer > p {
+    text-align: center;
+    color: #9ca3af;
+    font-size: 12px;
+    border-top: 1px solid #374151;
+    padding-top: 20px;
+    margin: 0 20px;
+}
+
+/* Add this at the end of your CSS */
+
+@media (max-width: 768px) {
+    /* Make header, nav, and sections adapt to smaller screens */
+    header {
+      font-size: 14px;
+      padding: 10px 0;
+    }
+  
+    section:first-of-type > div,
+    section:nth-of-type(2) > div,
+    section:nth-of-type(3) > div,
+    section:nth-of-type(4) > div,
+    section:nth-of-type(5) > div,
+    section:nth-of-type(6) > div {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+    /* Adjust large headings for smaller screens */
+    section h2 {
+      font-size: 32px;
+    }
+  
+    section h1 {
+      font-size: 36px;
+    }
+  
+    /* Make images scale down and reposition if needed */
+    section:first-of-type img:first-of-type,
+    section:first-of-type img:last-of-type,
+    section:nth-of-type(6) img {
+      width: 100%;
+      height: auto;
+      position: static;
+    }
+  
+    /* Stack footer columns vertically */
+    footer > div {
+      grid-template-columns: 1fr;
+    }
+  
+    /* Reduce padding and font sizes if necessary */
+    section p,
+    footer h4,
+    footer a {
+      font-size: 14px;
+    }
+  }
+  
+
+  /* Animate hamburger to "X" when open */
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  .hamburger span {
+    transition: all 0.3s ease;
+  }
+  
